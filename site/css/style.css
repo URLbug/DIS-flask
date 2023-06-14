@@ -1,0 +1,348 @@
+@import url("/woff/comfortaa.css");
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+  }
+
+*, *::after, *::before {
+    box-sizing: content-box
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+
+
+/* Animation */
+.h1-baner,
+.h1-baner::after,
+.h2-baner,
+.h2-baner::after,
+.a-baner,
+.a-baner::after  {
+  animation-delay: var(--animation-delay, 2s);
+  animation-iteration-count: var(--iterations, 1);
+  animation-duration: var(--duration, 800ms);
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.h1-baner,
+.h2-baner,
+.a-baner {
+  --animation-delay: var(--delay, 0);
+  --animation-duration: var(--duration, 800ms);
+  --animation-iterations: var(--iterations, 1);
+  position: relative;
+  animation-name: clip-text;
+  color: #FFF;
+  white-space: nowrap;
+  cursor: default;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f2f98b;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    pointer-events: none;
+    animation-name: text-revealer;
+  }
+  
+}
+
+
+@keyframes clip-text {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+
+@keyframes text-revealer {
+  
+  0%, 50% {
+    transform-origin: 0 50%;
+  }
+  
+  60%, 100% {
+    transform-origin: 100% 50%;   
+  }
+
+  
+  60% {
+    transform: scaleX(1);
+  }
+  
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+/* Baner */
+
+.baner {
+    background: url("https://oir.mobi/uploads/posts/2021-05/1622262895_21-oir_mobi-p-krasivie-vidi-prirodi-priroda-krasivo-foto-24.jpg") 50% 0 repeat-y fixed;
+    background-size: cover;
+    background-position: center center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    text-align: right;
+    background-color: rgba(200,100,0,.5);
+    background-blend-mode: multiply;
+}
+
+.text-baner {
+    color: rgb(231, 226, 220);
+  
+    padding-left: 600px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo-baner {
+  color: rgb(231, 226, 220);
+  padding-bottom: 650px;
+  padding-left: 100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-baner {
+  color: rgb(231, 226, 220);
+  padding-bottom: 650px;
+  padding-left: 100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-baner a {
+  text-decoration: none;
+  color: rgb(231, 226, 220);
+}
+
+.menu-baner:hover a {
+  transition: .5s;
+  color: rgb(255, 255, 255);
+  text-decoration: underline #ffffff dashed;
+}
+
+.h1-baner{
+    font-size: 35px;
+}
+
+.a-baner {
+    font-size: 20px;
+    color: rgb(231, 226, 220);
+
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+
+    border-radius: 12px;
+}
+
+.a-baner:hover{
+    background-color: #fff;
+    color: #000000;
+    transition: 1s;
+}
+
+/* about our */
+
+.about-our-text {
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.h1-about-our, .p-about-our {
+    text-align: center;
+}
+
+.about-our-text img {
+    width: 250px;
+    height: auto;
+    position: relative;
+    
+    padding: center;
+    margin: 10px;
+
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+
+.about-our-text img:hover {
+    transition: .5s;
+
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
+}
+
+/* about-our-2 */
+.about-our-text-2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+}
+
+.h1-about-our-2 {
+    position: relative;
+    padding-left: 100px;
+}
+
+.p-about-our-2 {
+    position: relative;
+    padding-left: 100px;
+    font-size: 20px;
+}
+
+.about-our-img-2 {
+  position: relative;
+  padding-left: 860px;
+}
+
+.about-our-img-2 img {
+  border-radius: 10px;
+  /* border: 5px #ccc solid; */
+}
+
+
+/* image caption */
+
+#images{
+    text-align:center;
+    margin:50px auto; 
+}
+#images a{
+    margin:0px 20px;
+    display:inline-block;
+    text-decoration:none;
+    color:black;
+ }
+
+/* background img */
+
+.background {
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.background::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.page-footer, .page-footer a {
+  color: var(--text-secondary);
+}
+
+.page-footer {
+  background-color: gray;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+/* text-contact */
+
+.text-contact {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 100px;
+}
+
+.contact {
+  color: #000000;
+}
+
+.text-contact p {
+  font-size: 20px;
+}
+
+a.contact_a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a.contact_a:hover {
+  transition: .5s;
+  color: #2f3201;
+  text-decoration: underline #000000 dashed;
+}
+
+.img2 {
+  position: relative;
+  padding-left: 860px;
+}
+
+.img2 img {
+  border-radius: 10px;
+  height: auto;
+  width: 550px;
+  /* border: 5px #ccc solid; */
+}
+
+/* Адаптивность */
+img {
+  object-fit: cover;
+}
+
+@media screen and (min-width: 601px) {
+  div {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.text-baner {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) { 
+  img { 
+  width: 100%; 
+  } 
+}

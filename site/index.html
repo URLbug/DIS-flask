@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static',filename='image/logo.jpg')}}">
+
+    <title>Digital Industrial Solutions</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/load.css')}}">
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+      </div>
+
+    <div class="baner">
+        <div class="logo-baner">
+            <b><h1>DIS</h1></b>
+        </div>
+        <div class="menu-baner">
+            <b><a href=" https://github.com/URLbug">Портфолио</a></b>
+        </div>
+        <div class="text-baner">
+            <h1 class="h1-baner">Digital Industrial Solutions</h1>
+            <h2 class="h2-baner">Мы всегда готовы Вам помочь!</h2>
+            <br>
+            <a href="https://t.me/DigitalIndustrialSolutions_bot" class="a-baner">Наш Telegram бот</a>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="about-our-2">
+        <div class="about-our-text-2">
+            <b><h1 class="h1-about-our-2">Digital Industrial Solutions</h1></b>
+            <br>
+            <p class="p-about-our-2">Мы -<b>Digital Industrial Solutions</b>, 
+                <br> 
+                начинающая и небольшая команда программистов, для которых создание <b>полезных</b> и <b>удобных</b> продуктов - наш основной приоритет. 
+                <br>
+                Мы всегда готовы помочь нашим клиентам. Наша команда гарантирует высокое качество нашей работы и полное удовлетворение наших клиентов.</p>
+        </div>
+        <div class="about-our-img-2">
+            <img src="https://i.pinimg.com/originals/8c/f2/c2/8cf2c2b62722f1971a7aad52fc597d22.jpg" height="490">
+        </div>
+    </div>
+
+    <br>
+
+    <div class="background" style="background-image: url(https://cdn-ru.bitrix24.ru/b13797914/landing/3fd/3fdccf2ec2625a6d2d87429a6ac3f7d1/EaKEstDVAAIwU4e.jpg-large_1x.jpg);">
+            
+    </div>
+
+    <br>
+    
+    <div class="about-our">
+        <div class="about-our-text">
+            <h1 class="h1-about-our">Digital Industrial Solutions</h1>
+            <p class="p-about-our">Какие услуги мы предлагаем?</p>
+            
+            <br>
+            <div id="images">
+                <a>
+                    <img src="{{url_for('static',filename='image/image (1).jpg')}}">
+                    
+                    <br>
+
+                    <p>Создание сайтов</p>
+                </a>
+                <a>
+                    <img src="{{url_for('static',filename='image/image (2).jpg')}}">
+                    
+                    <br>
+
+                    <p>Создание нейросети</p>
+                </a>
+                <a>
+                    <img src="{{url_for('static',filename='image/image (3).jpg')}}">
+                    
+                    <br>
+
+                    <p>Создание Telegram ботов</p>
+                </a>
+
+                <a>
+                    <img src="{{url_for('static',filename='image/renpy.jpg')}}">
+                    
+                    <br>
+                    
+                    <p>Создание игр на RenPy</p>
+                </a>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="background" style="background-image: url(https://phonoteka.org/uploads/posts/2022-09/thumbs/1663695070_6-phonoteka-org-p-programmist-fon-vkontakte-9.jpg);">
+        </div>
+
+        <br>
+
+        <div class="contact">
+            <div class="text-contact">
+                <h1>Контакты</h1>
+                <p>Телеграм менеджера - <a href="https://t.me/D1gitalFactory" class="contact_a">@D1gitalFactory</a></p>
+                <p>Телеграм бот - <a href="https://t.me/DigitalIndustrialSolutions_bot" class="contact_a">@DigitalIndustrialSolutions_bot</a></p>
+                <p>Наша почта - <a href="mailto:DISS.2023@mail.ru" class="contact_a">DISS.2023@mail.ru</a></p>
+            </div>
+            <div class="img2">
+                <img src="https://vmo24.ru/files/news/news_93109.jpg">
+            </div>
+        </div>
+
+        <br>
+        
+        <div class="background" style="background-image: url(https://www.notik.ru/content/img/1590125692_04-laptop-for-coding.jpg);">
+        </div>
+
+        <!-- JS -->
+        <script>
+            window.onload = function () {
+              document.body.classList.add('loaded');
+            }
+          </script>
+          
+          <script>
+            window.onload = function () {
+              document.body.classList.add('loaded_hiding');
+              window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+              }, 500);
+            }
+          </script>
+
+</body>
+</html>
